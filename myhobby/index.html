@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="/myhobby/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/myhobby/style.css">
+    <title>Мои хобби</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><button class="wai">Кто я?</button></a>
+        <div  class="dropmenu">
+            <button onclick="myFunction()" class="menubutton">Тык тык</button>
+            <div id="myDropdown" class="menucontent">
+                <a href="/myhobby/index.html">Про хобби</a>
+                <a href="/education/index.html">Про учебу</a>
+                <a href="#">...</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <p class="p">Я умею играть на трёх музыкальных инструментах. Нажмите на картинку, чтобы послушать!</p>
+    </div>
+    <div class="allpic">
+        <input type="image" src="/images/pianino.png" class="instrument" onclick="piano.play()">
+        <input type="image" src="/images/guitar.png" class="instrument" onclick="gitara.play()">
+        <input type="image" src="/images/flute.png" class="instrument" onclick="flute.play()">
+    </div>
+</body>
+</html>
