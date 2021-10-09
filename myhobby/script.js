@@ -16,6 +16,6 @@ function myFunction() {
     }
 }
 
-var piano = new Audio("/sound/piano.mp3");
-var gitara = new Audio("/sound/gitara.mp3");
-var flute = new Audio("/sound/flute.mp3");
+var piano = new Audio("../sound/piano.mp3");
+var gitara = new Audio("../sound/gitara.mp3");
+var flute = new Audio("../sound/flute.mp3");
