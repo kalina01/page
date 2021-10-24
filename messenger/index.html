@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Мессенджер</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><button class="wai">Кто я?</button></a>
+      <div class="dropmenu">
+        <button onclick="myFunction()" class="menubutton">Тык тык</button>
+        <div id="myDropdown" class="menucontent">
+          <a href="../myhobby/index.html">Про хобби</a>
+          <a href="../education/index.html">Про учебу</a>
+          <a href="../messenger/index.html">Мессенджер</a>
+        </div>
+      </div>
+    </header>
+    <div class="box">
+      <div class="messengerWindow person2">
+        <div class="messageBox"></div>
+
+        <div class="textWindow">
+          <textarea id="window"></textarea>
+          <input
+            type="image"
+            src="../images/plane.png"
+            class="plane"
+            onclick="sendMessage()"
+          />
+        </div>
+      </div>
+      <div class="person">
+        <button class="person2" onclick="selectPerson2()"></button>
+        <button class="person1" onclick="selectPerson1()"></button>
+      </div>
+    </div>
+
+    <template id="messageTemplate">
+      <div class="message">
+        <p></p>
+      </div>
+    </template>
+  </body>
+</html>

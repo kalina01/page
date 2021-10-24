@@ -37,7 +37,7 @@ button{
 }
 .menubutton{
     height: 25px;
-    width: 80px;
+    width: 90px;
 }
 .menucontent{
     display: none;
@@ -45,7 +45,7 @@ button{
     z-index: 1;
     position:absolute;
     margin-top: 25px;
-    width: 80px;
+    width: 90px;
     text-align: center;
 }
 .menucontent a{
