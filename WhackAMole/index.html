@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="../script.js"></script>
+  <script src="script.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Я учусь...</title>
+    <title>Ударь крота</title>
   </head>
   <body>
     <header>
@@ -15,20 +15,19 @@
         <button onclick="myFunction()" class="menubutton">Тык тык</button>
         <div id="myDropdown" class="menucontent">
           <a href="../myhobby/index.html">Про хобби</a>
-          <a href="index.html">Про учебу</a>
+          <a href="../education/index.html">Про учебу</a>
           <a href="../messenger/index.html">Мессенджер</a>
-          <a href="../WhackAMole/index.html">Ударь Крота</a>
+          <a href="index.html">Ударь Крота</a>
           <a href="#">Братья пилоты</a>
         </div>
       </div>
     </header>
-    <div class="content">
-      <p class="p">
-        Я учусь в ДВФУ на 3 курсе специальности программная инженерия!
-      </p>
+    <div class="menu">
+      <textarea id="width"></textarea>
+      <textarea id="height"></textarea>
+      <button onclick="generateField()">Создать</button>
+      <button onclick="play()">Играть</button>
     </div>
-    <div class="fefu">
-      <img src="../images/dvfu2.png" width="1280" />
-    </div>
+    <div id="fieldBox"></div>
   </body>
 </html>
