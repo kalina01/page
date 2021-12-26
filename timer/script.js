@@ -1,25 +1,13 @@
-function myFunction() {
-  document.getElementById('myDropdown').classList.toggle('show');
-}
+import includeHeader from '../header.js';
+import microwaveSound from '../sound/microwave.mp3';
+includeHeader();
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.menubutton')) {
-    var dropdowns = document.getElementsByClassName('menucontent');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
-
-var microwave = new Audio('../sound/microwave.mp3');
+var microwave = new Audio(microwaveSound);
 let seconds = 5;
 let milliseconds = 0;
 let delay = 33;
+
+document.querySelector('#timeButton').addEventListener('click', start);
 function start() {
   const promise = new Promise((resolve, reject) => {
     const interval = setInterval(() => {

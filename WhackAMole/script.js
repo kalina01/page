@@ -1,20 +1,6 @@
-function myFunction() {
-  document.getElementById('myDropdown').classList.toggle('show');
-}
+import includeHeader from '../header.js';
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.menubutton')) {
-    var dropdowns = document.getElementsByClassName('menucontent');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
+includeHeader();
 
 let field;
 
@@ -28,6 +14,9 @@ function getValue() {
   };
 }
 
+document
+  .querySelector('#generateField')
+  .addEventListener('click', generateField);
 function generateField() {
   clearInterval(gameloop);
   score = 0;
@@ -77,6 +66,7 @@ let score = 0;
 let scoreInfo = document.createElement('p');
 scoreInfo.style = 'align-self: center;';
 
+document.querySelector('#play').addEventListener('click', play);
 function play() {
   let menu = document.querySelector('.menu');
 

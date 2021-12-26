@@ -1,21 +1,25 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.menubutton')) {
-      var dropdowns = document.getElementsByClassName("menucontent");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-}
+import includeHeader from '../header.js';
+import pianoSound from '../sound/piano.mp3';
+import guitarSound from '../sound/gitara.mp3';
+import fluteSound from '../sound/flute.mp3';
 
-var piano = new Audio("../sound/piano.mp3");
-var gitara = new Audio("../sound/gitara.mp3");
-var flute = new Audio("../sound/flute.mp3");
+includeHeader();
+
+const pianoInput = document.querySelector('#piano');
+pianoInput.addEventListener('click', function () {
+  piano.play();
+});
+
+const guitarInput = document.querySelector('#guitar');
+guitarInput.addEventListener('click', function () {
+  guitar.play();
+});
+
+const fluteInput = document.querySelector('#flute');
+fluteInput.addEventListener('click', function () {
+  flute.play();
+});
+
+var piano = new Audio(pianoSound);
+var guitar = new Audio(guitarSound);
+var flute = new Audio(fluteSound);

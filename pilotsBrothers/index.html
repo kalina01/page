@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="script.js"></script>
+  <script src="script.js" defer type="module"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,25 +9,10 @@
     <title>Братья пилоты</title>
   </head>
   <body>
-    <header>
-      <a href="../index.html"><button class="wai">Кто я?</button></a>
-      <div class="dropmenu">
-        <button onclick="myFunction()" class="menubutton">Тык тык</button>
-        <div id="myDropdown" class="menucontent">
-          <a href="../myhobby/index.html">Про хобби</a>
-          <a href="../education/index.html">Про учебу</a>
-          <a href="../messenger/index.html">Мессенджер</a>
-          <a href="../WhackAMole/index.html">Ударь Крота</a>
-          <a href="index.html">Братья пилоты</a>
-          <a href="../timer/index.html">Обратный отсчёт</a>
-          <a href="../memes/index.html">Мемы</a>
-        </div>
-      </div>
-    </header>
     <div class="menu">
       <textarea id="width"></textarea>
       <textarea id="height"></textarea>
-      <button onclick="generateField()">Создать</button>
+      <button id="generateButton">Создать</button>
     </div>
     <div id="fieldBox"></div>
   </body>

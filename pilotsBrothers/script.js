@@ -1,20 +1,6 @@
-function myFunction() {
-  document.getElementById('myDropdown').classList.toggle('show');
-}
+import includeHeader from '../header.js';
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.menubutton')) {
-    var dropdowns = document.getElementsByClassName('menucontent');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
+includeHeader();
 
 let field;
 
@@ -27,6 +13,10 @@ function getValue() {
     height: height.value,
   };
 }
+
+document
+  .querySelector('#generateButton')
+  .addEventListener('click', generateField);
 
 function generateField() {
   const fieldBox = document.getElementById('fieldBox');

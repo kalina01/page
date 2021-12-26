@@ -1,0 +1,23 @@
+{
+  "name": "page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "parcel *.html education/index.html memes/index.html messenger/index.html myhobby/index.html pilotsBrothers/index.html timer/index.html WhackAMole/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalina01/page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalina01/page/issues"
+  },
+  "homepage": "https://github.com/kalina01/page#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

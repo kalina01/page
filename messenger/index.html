@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="script.js"></script>
+  <script src="script.js" defer type="module"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,38 +9,18 @@
     <title>Мессенджер</title>
   </head>
   <body>
-    <header>
-      <a href="../index.html"><button class="wai">Кто я?</button></a>
-      <div class="dropmenu">
-        <button onclick="myFunction()" class="menubutton">Тык тык</button>
-        <div id="myDropdown" class="menucontent">
-          <a href="../myhobby/index.html">Про хобби</a>
-          <a href="../education/index.html">Про учебу</a>
-          <a href="../messenger/index.html">Мессенджер</a>
-          <a href="../WhackAMole/index.html">Ударь Крота</a>
-          <a href="../pilotsBrothers/index.html">Братья пилоты</a>
-          <a href="../timer/index.html">Обратный отсчёт</a>
-          <a href="../memes/index.html">Мемы</a>
-        </div>
-      </div>
-    </header>
     <div class="box">
       <div class="messengerWindow person2">
         <div class="messageBox"></div>
 
         <div class="textWindow">
           <textarea id="window"></textarea>
-          <input
-            type="image"
-            src="../images/plane.png"
-            class="plane"
-            onclick="sendMessage()"
-          />
+          <img id="plane" class="plane" src="../images/plane.png" />
         </div>
       </div>
       <div class="person">
-        <button class="person2" onclick="selectPerson2()"></button>
-        <button class="person1" onclick="selectPerson1()"></button>
+        <button class="person2"></button>
+        <button class="person1"></button>
       </div>
     </div>
 

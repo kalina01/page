@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="script.js"></script>
+  <script src="script.js" defer type="module"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,21 +9,6 @@
     <title>Мои хобби</title>
   </head>
   <body>
-    <header>
-      <a href="../index.html"><button class="wai">Кто я?</button></a>
-      <div class="dropmenu">
-        <button onclick="myFunction()" class="menubutton">Тык тык</button>
-        <div id="myDropdown" class="menucontent">
-          <a href="index.html">Про хобби</a>
-          <a href="../education/index.html">Про учебу</a>
-          <a href="../messenger/index.html">Мессенджер</a>
-          <a href="../WhackAMole/index.html">Ударь Крота</a>
-          <a href="../pilotsBrothers/index.html">Братья пилоты</a>
-          <a href="../timer/index.html">Обратный отсчёт</a>
-          <a href="../memes/index.html">Мемы</a>
-        </div>
-      </div>
-    </header>
     <div class="content">
       <p class="p">
         Я умею играть на трёх музыкальных инструментах. Нажмите на картинку,
@@ -31,24 +16,9 @@
       </p>
     </div>
     <div class="allpic">
-      <input
-        type="image"
-        src="../images/pianino.png"
-        class="instrument"
-        onclick="piano.play()"
-      />
-      <input
-        type="image"
-        src="../images/guitar.png"
-        class="instrument"
-        onclick="gitara.play()"
-      />
-      <input
-        type="image"
-        src="../images/flute.png"
-        class="instrument"
-        onclick="flute.play()"
-      />
+      <img id="piano" class="instrument" src="../images/pianino.png" />
+      <img id="guitar" class="instrument" src="../images/guitar.png" />
+      <img id="flute" class="instrument" src="../images/flute.png" />
     </div>
   </body>
 </html>
