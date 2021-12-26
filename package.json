@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "dev": "parcel *.html education/index.html memes/index.html messenger/index.html myhobby/index.html pilotsBrothers/index.html timer/index.html WhackAMole/index.html"
+    "dev": "parcel *.html education/index.html memes/index.html messenger/index.html myhobby/index.html pilotsBrothers/index.html timer/index.html WhackAMole/index.html",
+    "build": "parcel build *.html education/index.html memes/index.html messenger/index.html myhobby/index.html pilotsBrothers/index.html timer/index.html WhackAMole/index.html"
   },
   "repository": {
     "type": "git",
